@@ -18,5 +18,12 @@ read kiht
 echo "Mitu küpsist on 1 pakis?"
 read pakk
 
-echo "Tuleb osta nii palju kypsiseid:"
-expr $kan_pikkus \* $kan_laius / $kyp_pikkus / $kyp_laius \* $kiht / $pakk
+#echo "Tuleb osta nii palju kypsiseid:"
+#expr $kan_pikkus \* $kan_laius / $kyp_pikkus / $kyp_laius \* $kiht / $pakk
+
+kandik=`expr $kan_pikkus \* $kan_laius`
+kpakk=`expr $kyp_pikkus \* $kyp_laius`
+vastus=`expr $kandik / $kpakk`
+
+echo "Tuleb osta $vastus pakke küpsiseid"
+
