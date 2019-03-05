@@ -1,6 +1,6 @@
 #!/bin/bash
 
-echo "Sisesta oma vanus: "
+echo -e "Sisesta oma vanus: \c"
 read vanus
 
 if test $vanus -gt 0 -a $vanus -lt 11
