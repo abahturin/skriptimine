@@ -8,10 +8,9 @@ read b
 
 #c=$a * $a + $b * $b
 
-#c=$(((a*a)+(b*b)))
+c=$((($a*$a)+($b*$b)))
 
-c=$(((a*a)+(b*b))) 
+vastus=$(echo "scale=2;sqrt($c)" | bc) 
 
-sc = sqrt($c)
+echo "C = $vastus"
 
-echo $sc
