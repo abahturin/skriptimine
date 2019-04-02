@@ -2,6 +2,8 @@
 
 # algarvu tuvastamine
 
+for run in {1..20}
+do
 echo -e "Sisesta suvaline arv: \c"
 read arv
 
@@ -21,3 +23,4 @@ else
 		echo "$arv - ei ole algarv"
 	fi
 fi
+done
